@@ -27,7 +27,7 @@ function taglinemaker() {
     tags1.innerHTML = tagArray1[j];
     tags2.innerHTML = tagArray2[j];
 
-    console.log(tagArray1[j]+' '+tagArray2[i]);
+    console.log(tagArray1[j]+' '+tagArray2[j]);
 
     tagline.style.animationName = "shade3";
     tagline.style.animationIterationCount = "infinite";
