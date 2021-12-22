@@ -1,5 +1,4 @@
-//Animation Toggle Script
-
+// Text Changer Script
 var infohead = document.getElementById("infohead");
 var head = document.getElementById("header");
 var tagline = document.getElementById("tagline");
@@ -28,11 +27,11 @@ function taglinemaker() {
     tags1.innerHTML = tagArray1[j];
     tags2.innerHTML = tagArray2[j];
 
-    console.log(tagArray1[j]);
+    console.log(tagArray1[j]+' '+tagArray2[i]);
 
     tagline.style.animationName = "shade3";
     tagline.style.animationIterationCount = "infinite";
-    // tagline.style.animationDelay = "2s";
+    
     tagline.style.animationDuration = "3s";
 
     j += 1;
@@ -40,7 +39,7 @@ function taglinemaker() {
       j = 0;
     }
   }, 3000);
-  // console.log();
+  
 }
 
 taglinemaker();

@@ -5,6 +5,10 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+a{
+  text-decoration: none;
+  color: #fff;
+}
 @media screen and (min-width: 765px) {
   .sec1 {
     width: 100%;
@@ -27,7 +31,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* animation: shade; */
     animation-duration: 2s;
     animation-delay: 2s;
     animation-iteration-count: 1;
@@ -54,7 +57,6 @@
     border-bottom: 1px solid #fff;
   }
   .sec1 .header .contbtn {
-    /* position: relative; */
     font-size: 1em;
     padding: 6px 20px;
     background-color: #f56cb3;
@@ -81,7 +83,6 @@
     top: 40%;
     transform: translate(0, -50%);
     font-size: 1.7em;
-    /* animation: shade2; */
     animation-duration: 3s;
     animation-delay: 2s;
     animation-iteration-count: 1;
@@ -93,8 +94,6 @@
     color: #fff;
   }
   .sec1 .tagline {
-    /* animation-delay: 2s;
-    animation-duration: 3s; */
     width: 40%;
     position: relative;
     top: 40%;
@@ -176,6 +175,8 @@
   .char12 {
     transform: rotate(360deg);
   }
+  
+  
 
   @keyframes shade {
     0% {
@@ -202,21 +203,16 @@
       transform: translate(0, 30%);
       opacity: 0;
     }
-    100% {
+    90% {
       transform: translate(0, -50%);
       opacity: 1;
     }
-  }
-  @keyframes shade4 {
-    0% {
-      transform: translate(0, 30%);
+    100% {
+      transform: translate(0, -50%);
       opacity: 0;
     }
-    100% {
-      transform: translate(0, -50%);
-      opacity: 1;
-    }
   }
+  
 }
 
 @media screen and (max-width: 765px) {
@@ -239,7 +235,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* animation: shade; */
     animation-duration: 2s;
     animation-delay: 2s;
     animation-iteration-count: 1;
@@ -249,14 +244,12 @@
   .sec1 .header .title {
     text-transform: uppercase;
     font-weight: 400;
-    /* margin-left: 5%; */
   }
   .sec1 .header ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-right: 1%; */
   }
   .sec1 .header ul li {
     padding-right: 5px;
@@ -267,7 +260,6 @@
     border-bottom: 1px solid #fff;
   }
   .sec1 .header .contbtn {
-    /* position: relative; */
     font-size: 0.7rem;
     padding: 3px 10px;
     background-color: #f56cb3;
@@ -293,7 +285,6 @@
     top: 40%;
     transform: translate(0, -50%);
     font-size: 1.7em;
-    /* animation: shade2; */
     animation-duration: 2s;
     animation-delay: 2s;
     animation-iteration-count: 1;
@@ -304,9 +295,6 @@
     font-size: 0.8em;
   }
   .sec1 .tagline {
-    /* animation-delay: 2s; */
-    /* animation-duration: 3s; */
-    /* animation-iteration-count: infinite; */
     width: 80%;
     position: relative;
     top: 35%;
@@ -415,9 +403,13 @@
       transform: translate(0, 30%);
       opacity: 0;
     }
-    100% {
+    90% {
       transform: translate(0, -50%);
       opacity: 1;
+    }
+    100% {
+      transform: translate(0, -50%);
+      opacity: 0;
     }
   }
   @keyframes shade4 {
